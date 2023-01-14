@@ -14,4 +14,12 @@ class AfficheCinema extends AbstractEntity
         ]);
     }
 
+    public function update(int $id, string $title, string $description){
+        $request = $this->pdo->prepare('UPDATE AfficheCinema SET title= :title, description = :description WHERE id = :id');
+        $request->execute([
+           "title"=> $title,
+           "description"=> $description,
+           "id"=> $id
+        ]);
+    }
 }
