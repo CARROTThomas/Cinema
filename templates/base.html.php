@@ -22,17 +22,15 @@
         <span class="logo" href="index.php">LOGO</span>
         <div class="d-flex justify-content-between align-items-center">
             <ul class="d-flex">
-                <li><a class="lien" href="#">create affiche film</a></li>
+                <li><a class="lien" href="createAfficheCinema.php">create affiche film</a></li>
             </ul>
         </div>
     </nav>
 </header>
 
-
 <div class="container-fluid">
     <?= $pageContent ?>
 </div>
-
 
 <!--  Footer  -->
 <section class="footer">
@@ -67,7 +65,6 @@
         </div>
     </div>
 </section>
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 <script src="JS/main.js"></script>

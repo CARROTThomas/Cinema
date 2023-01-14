@@ -19,4 +19,22 @@ class AbstractEntity
         $posts = $request->fetchAll();
         return $posts;
     }
+
+    public function findById(int $id)
+    {
+        $request = $this->pdo->prepare("SELECT * FROM $this->tableName WHERE id = :id");
+        $request->execute(["id"=>$id]);
+        $data = $request->fetch();
+        return $data;
+    }
+
+    public function delete(int $id)
+    {
+        $request = $this->pdo->prepare("DELETE FROM $this->tableName WHERE id = :id");
+        $request->execute(["id"=>$id]);
+    }
+
+
+
+
 }

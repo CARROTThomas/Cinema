@@ -4,7 +4,7 @@
             <div class="p-3 border m-2">
                 <h3><?= $afficheCinema["title"] ?></h3>
                 <p><?= $afficheCinema["description"] ?></p>
-                <a href="post.php?id=<?= $afficheCinema['id'] ?>" class="btn btn-success">Lire</a>
+                <a href="afficheCinema.php?id=<?= $afficheCinema['id'] ?>" class="btn btn-success">Lire</a>
             </div>
         </div>
     <?php endforeach; ?>
