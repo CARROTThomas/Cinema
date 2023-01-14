@@ -1,0 +1,123 @@
+/*  #################### @ ####################  */
+/* IMPORT POLICE */
+
+/* COLORS */
+:root
+{
+    --white :#fff;
+    --black :#000;
+
+    --background : #34393b;
+    --colorLien : #1eb3f1;
+    --colorLienFooter : #171616;
+}
+/* #@# */
+*
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+body
+{
+    background-color: var(--background);
+}
+
+/*  #################### @ ####################  */
+/*  #################### @ ####################  */
+/*                 ###  CODE  ###                */
+/*  #################### @ ####################  */
+/*  #################### @ ####################  */
+
+
+
+/* NavBar */
+header
+{
+    height: 20vh;
+    background-color: var(--background);
+}
+.logo
+{
+    color: var(--white);
+    user-select: none;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+nav, ul, li, a
+{
+    padding: 0px;
+    margin: 0px;
+    user-select: none;
+    text-decoration: none;
+}
+
+.lien
+{
+    padding: 0px;
+    margin: 10px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.dataClient
+{
+    margin: 0px;
+    padding: 1em .5em;
+}
+
+.lien:hover
+{
+    color: var(--colorLien);
+    transition: .5s;
+}
+/* ## */
+.homePageSearchGame
+{
+    height: auto;
+    margin-bottom: 50px;
+    width: 80%;
+}
+.inputSearchGame
+{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid black;
+}
+.buttonSearchHomePage
+{
+    background-color: orangered;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: .5em;
+    border: none;
+    margin-left: 5px;
+}
+
+.affiches
+{
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+
+/* Footer */
+.lienFooter
+{
+    color: var(--colorLienFooter);
+}
+
+.lienFooter:hover
+{
+    color: var(--colorLien);
+    transition: .5s;
+}
+
+/*  #################### @ ####################  */
+/*  #################### @ ####################  */
+/*  #################### @ ####################  */
